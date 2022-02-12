@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hue: 256;
+    --color-primary: hsl(var(--hue), 88%, 65%);
+    --color-secondary: hsl(0, 0%, 60%);
+    --color-primary-hover: hsl(var(--hue), 88%, 55%);
+    --color-task: #444444;
+
+    --input-color: hsl(0 , 0%, 95%);
+
+    --body-color: #FFFFFF;
+
+    --font-bold: 'Gilroy-Bold', sans-serif;
+    --font-medium: 'Gilroy-Medium', sans-serif;
+
+    --head-font-size: 2.125rem;
+    --text-font: 1rem;
+    --icon-font: 1.5rem;
+}
+
+body {
+    background: var(--body-color);
+    font-family: var(--font-bold);
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.2;
+}
+h1 {
+    font-size: var(--head-font-size);
+    color: var(--color-primary);
+    font-weight: normal;
+}
+span {
+    font-family: var(--font-medium);
+    color: var(--color-secondary);
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 4rem;
+    background-color: #FFFFFF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button, select {
+    height: 2.5rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+form input {
+    width: 28.75rem;
+    font-size: var(--text-font);
+    font-family: var(--font-medium);
+    font-weight: bold;
+    background: var(--input-color);
+    border-radius: 0.313rem 0 0 0.313rem;
+}
+
+form button {
+    cursor: pointer;
+    width: 2.5rem;
+    font-size: var(--icon-font);
+    color: var(--body-color);
+    background: var(--color-primary);
+    border-radius: 0 0.313rem 0.313rem 0;
+}
+
+form button:hover {
+    background: var(--color-primary-hover);
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: var(--color-primary);
+    width: 10rem;
+    cursor: pointer;
+    font-family: var(--font-bold);
+    font-size: var(--text-font);
+    font-weight: bold;
+    border-radius: 0.313rem;
+    background: var(--input-color);
+}
+
+.select {
+    margin-left: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: var(--color-primary);
+    color: var(--body-color);
+    top: 0;
+    right: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    pointer-events: none;
+    border-radius: 0rem 0.313rem 0.313rem 0rem;
+}
+.select:hover::after {
+    background: var(--color-primary-hover);
+}
+
+.task__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.task__list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.task {
+    width: 41.688rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    background: var(--input-color);
+    color: var(--color-task);
+    font-family: var(--font-medium);
+    font-size: var(--text-font);
+    border: none;
+    border-radius: 0.313rem;
+    border-left: .4rem solid var(--color-primary);
+    transition: all 0.5s ease;
+}
+
+.task li {
+    flex: 1;
+}
+
+.task__item {
+    padding: .5rem;
+}
+
+.check__btn, .trash__btn{
+    cursor: pointer;
+    height: 3.125rem;
+    width: 3.125rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    color: var(--body-color);
+}
+
+.check__btn {
+    background: hsl(100, 88%, 65%);
+}
+.check__btn:hover {
+    background: hsl(100, 88%, 50%);
+}
+
+.trash__btn {
+    background: hsl(360, 88%, 65%);
+    border-radius: 0 0.313rem 0.313rem 0;
+}
+.trash__btn:hover {
+    background: hsl(360, 88%, 60%);
+}
+
+.fa-check,
+.fa-tash {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
