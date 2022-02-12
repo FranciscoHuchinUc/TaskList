@@ -15,8 +15,7 @@
 
     --body-color: #FFFFFF;
 
-    --font-bold: 'Gilroy-Bold', sans-serif;
-    --font-medium: 'Gilroy-Medium', sans-serif;
+    --font-family: 'Poppins', sans-serif;
 
     --head-font-size: 2.125rem;
     --text-font: 1rem;
@@ -25,7 +24,7 @@
 
 body {
     background: var(--body-color);
-    font-family: var(--font-bold);
+    font-family: var(--font-family);
 }
 
 h1, h2, h3, h4 {
@@ -34,12 +33,12 @@ h1, h2, h3, h4 {
 h1 {
     font-size: var(--head-font-size);
     color: var(--color-primary);
-    font-weight: normal;
+    font-weight: 700;
 }
 span {
-    font-family: var(--font-medium);
+    font-family: var(--font-family);
     color: var(--color-secondary);
-    font-weight: normal;
+    font-weight: 500;
 }
 
 ul {
@@ -81,8 +80,8 @@ form input, form button, select {
 form input {
     width: 28.75rem;
     font-size: var(--text-font);
-    font-family: var(--font-medium);
-    font-weight: bold;
+    font-family: var(--font-family);
+    font-weight: 700;
     background: var(--input-color);
     border-radius: 0.313rem 0 0 0.313rem;
 }
@@ -107,9 +106,9 @@ select {
     color: var(--color-primary);
     width: 10rem;
     cursor: pointer;
-    font-family: var(--font-bold);
+    font-family: var(--font-family);
     font-size: var(--text-font);
-    font-weight: bold;
+    font-weight: 700;
     border-radius: 0.313rem;
     background: var(--input-color);
 }
@@ -162,7 +161,7 @@ select {
     margin: 0.5rem;
     background: var(--input-color);
     color: var(--color-task);
-    font-family: var(--font-medium);
+    font-family: var(--font-family);
     font-size: var(--text-font);
     border: none;
     border-radius: 0.313rem;
