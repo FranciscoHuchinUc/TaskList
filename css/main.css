@@ -147,7 +147,6 @@ select {
 }
 
 .task__list {
-    min-width: 30%;
     list-style: none;
 }
 
@@ -215,4 +214,78 @@ select {
 .fall {
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
+}
+
+@media screen and (max-width: 760px) {
+    :root{
+        --head-font-size: 1.8rem;
+        --text-font: .8rem;
+        --icon-font: 1.2rem;
+    }
+    form input {
+        width: 16rem;
+        height: 2rem;
+    }
+    form button {
+        width: 2rem;
+        height: 2rem;
+    }
+    select {
+        width: 10rem;
+        height: 2rem;
+        font-size: .8rem;
+    }
+    .select::after {
+        height: 2rem;
+        width: 2rem;
+    }
+    .task__list {
+        width: 100%;
+    }
+    .task {
+        width: 30rem;
+        height: 2.5rem;
+    }
+    .check__btn,
+    .trash__btn {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    :root{
+        --head-font-size: 1.5rem;
+        --text-font: .7rem;
+        --icon-font: 1rem;
+    }
+    form input {
+        width: 8rem;
+        height: 2rem;
+    }
+    form button {
+        width: 2rem;
+        height: 2rem;
+    }
+    select {
+        width: 6rem;
+        height: 2rem;
+        font-size: .5rem;
+    }
+    .select::after {
+        height: 2rem;
+        width: 2rem;
+    }
+    .task__list {
+        width: 100%;
+    }
+    .task {
+        width: 18rem;
+        height: 2.5rem;
+    }
+    .check__btn,
+    .trash__btn {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
