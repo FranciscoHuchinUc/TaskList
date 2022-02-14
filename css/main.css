@@ -253,7 +253,7 @@ select {
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
     :root{
         --head-font-size: 1.5rem;
         --text-font: .7rem;
