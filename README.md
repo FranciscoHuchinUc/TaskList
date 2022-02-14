@@ -4,5 +4,7 @@
 
 [Link de La Web](https://franciscohuchinuc.github.io/TaskList/)
 
-![preview](/preview.png)
-![previewMobile](/previewMobile.png)
+<div style="display: flex">
+   <img src="https://github.com/FranciscoHuchinUc/TaskList/blob/main/preview.png" width="650">
+   <img src="https://github.com/FranciscoHuchinUc/TaskList/blob/main/previewMobile.png" width="220" >
+</div>
